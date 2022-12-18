@@ -4,9 +4,9 @@ function Header() {
   return (
     <>
       <nav className='header'>
-        <Link to="/about">About</Link>
+        <Link to="/">About</Link>
         <Link to="/pojects">Projects</Link>
-        <Link to="/contact">contact</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </>
   )
