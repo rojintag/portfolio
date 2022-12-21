@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import { requestProjects } from '../api/projects';
-import BtnSlider from './BtnSlider';
 import ProjectCard from './ProjectCard';
 import Slider from "react-slick";
 
@@ -15,20 +14,33 @@ function Works() {
     return <img className={"loading"} src={require('../components/assets/images/rings.svg')} />
   }
 
+  const seeDetails = () => {
+    alert("button clicked")
+  }
+
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
+    lazyLoad: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+        ]
   };
 
   return (
     <div className='projects'>
-      <h2>My Projects</h2>
+      <h2 className="title">My Projects</h2>
       <Slider {...settings}>
         {getProjects.data.map((project, index) => {
-          return <ProjectCard title={project.title} date={project.date} image={project.image} key={index} />
+          return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={seeDetails} key={index} />
         })
       }
       </Slider>
