@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "My Green",
+      "date": "July2022",
+      "description": "In this project we used sass, javascript and firebase",
+      "image": "https://i.picsum.photos/id/1029/200/300.jpg?hmac=VpePgDBTGFZYhRTeOD9o6nCvZB_01SrIHCMMkoZal_A"
+    },
+    {
+      "id": 2,
+      "title": "Tie in",
+      "date": "December 2022",
+      "description": "In this project we used sass, javascript and firebase",
+      "image": "https://i.picsum.photos/id/1029/200/300.jpg?hmac=VpePgDBTGFZYhRTeOD9o6nCvZB_01SrIHCMMkoZal_A"
+    },
+    {
+      "id": 3,
+      "title": "EZpill",
+      "date": "January2023",
+      "description": "In this project we used sass, javascript and firebase",
+      "image": "https://i.picsum.photos/id/1029/200/300.jpg?hmac=VpePgDBTGFZYhRTeOD9o6nCvZB_01SrIHCMMkoZal_A"
+    },
+    {
+      "id": 4,
+      "title": "EZpill",
+      "date": "January2023",
+      "description": "In this project we used sass, javascript and firebase",
+      "image": "https://i.picsum.photos/id/1029/200/300.jpg?hmac=VpePgDBTGFZYhRTeOD9o6nCvZB_01SrIHCMMkoZal_A"
+    }
+  ]
+}
