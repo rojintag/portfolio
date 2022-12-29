@@ -23,7 +23,7 @@ function Works() {
     infinite: true,
     speed: 300,
     lazyLoad: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {

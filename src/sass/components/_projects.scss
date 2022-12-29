@@ -57,8 +57,13 @@
     width: 100%;
   }
 
+  .slick-slide.slick-active {
+    margin: 2rem;
+    // width: 40vw;
+  }
+
   .slick-active {
-    // position: relative;
+    position: relative;
     // height: 400px;
     background-color: rgb(49, 49, 49);
     border-radius: 15px;
