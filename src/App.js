@@ -4,6 +4,7 @@ import Name from './components/Name';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Works from './components/Works';
+import Contact from "./components/Contact";
 
 function App() {
   const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Name />} />
           <Route path="/projects" element={<Works />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         </QueryClientProvider>
 
