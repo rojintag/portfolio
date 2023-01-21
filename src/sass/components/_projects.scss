@@ -59,10 +59,7 @@
 
   .slick-slide.slick-active {
     margin: 2rem;
-    // width: 40vw;
-  }
-
-  .slick-active {
+    width: 60vw !important;
     position: relative;
     // height: 400px;
     background-color: rgb(49, 49, 49);
