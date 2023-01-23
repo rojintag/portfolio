@@ -18,7 +18,7 @@ function Contact() {
   return (
     <div className='contact'>
       <h2>
-        <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>M</span><span>e</span>
+        <span className='anime'>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>M</span><span>e</span>
       </h2>
       <form action="https://formspree.io/f/xwkynywk" method="post">
         <div className="name-wrapper">

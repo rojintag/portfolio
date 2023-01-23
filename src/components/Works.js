@@ -18,32 +18,34 @@ function Works() {
     alert("button clicked")
   }
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 300,
-    lazyLoad: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-        ]
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   lazyLoad: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 700,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       }
+  //     }
+  //       ]
+  // };
 
   return (
     <div className='projects'>
       <h2 className="title">My Projects</h2>
-      <Slider {...settings}>
-        {getProjects.data.map((project, index) => {
-          return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={seeDetails} key={index} />
-        })
-      }
-      </Slider>
+      {/* <Slider {...settings}> */}
+        <div className="gallery">
+          {getProjects.data.map((project, index) => {
+            return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={seeDetails} key={index} />
+          })
+                }
+        </div>
+      {/* </Slider> */}
     </div>
   )
 }
