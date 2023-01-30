@@ -25,7 +25,7 @@ function Contact() {
           <div className='ad-text'>
             <input
               onChange={handleChange}
-              className={ text ? "has-value" : ""}
+              className={text ? "has-value" : ""}
               id="name"
               type="text"
               name='name'
@@ -41,7 +41,7 @@ function Contact() {
           <div className='ad-text'>
             <input
               onChange={handleChange}
-              className={ text ? "has-value" : ""}
+              className={text ? "has-value" : ""}
               id="email"
               type="text"
               name='email'
@@ -60,7 +60,7 @@ function Contact() {
           <textarea
             name='text'
             onChange={handleChange}
-            className={ text ? "has-value" : ""}
+            className={text ? "has-value" : ""}
             id="message"
             rows="5"
             required

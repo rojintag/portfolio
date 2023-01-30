@@ -1,0 +1,58 @@
+.side-menu {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 30px;
+  right: auto;
+  z-index: 10;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+
+ul::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 110px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+li {
+  margin: .5rem;
+}
+
+li a{
+font-size: 1.5rem;
+text-decoration: none;
+color: white;
+transition: ease-out 0.5s;
+-webkit-transition: ease-out 0.5s;
+-moz-transition: ease-out 0.5s;
+}
+
+li a:hover {
+  color: #36EEE0;
+}
+}
+
+.white-content {
+  ul::after  {
+    background-color: black;
+  }
+  li a {
+    color: black;
+  }
+
+  li a:hover {
+    color: #e6a637;
+  }
+}

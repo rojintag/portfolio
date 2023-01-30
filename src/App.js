@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Works from './components/Works';
 import Contact from "./components/Contact";
 import ProjectDetails from "./components/ProjectDetails";
+import Side from "./components/Side";
 
 function App() {
   const queryClient = new QueryClient();
@@ -14,14 +15,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <Side />
         <QueryClientProvider client={queryClient}>
 
-        <Routes>
-          <Route path="/" element={<Name />} />
-          <Route path="/projects" element={<Works />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projectDetails" element={<ProjectDetails />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Name />} />
+            <Route path="/projects" element={<Works />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projectDetails" element={<ProjectDetails />} />
+          </Routes>
         </QueryClientProvider>
 
       </BrowserRouter>

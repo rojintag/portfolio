@@ -5,7 +5,7 @@ import { useState } from "react";
 function Name() {
   const [onCard, setOnCard] = useState(false)
   const onClick = () => {
-setOnCard(!onCard)
+    setOnCard(!onCard)
   }
   return (
     <div className='name'>
@@ -15,9 +15,9 @@ setOnCard(!onCard)
         <p className="link" onClick={onClick}>About Me</p>
       </div>
       <div className={onCard ? "card-show" : "card-hide"}>
-      <div className="x-icon">
-        <FontAwesomeIcon icon={faCircleXmark} onClick={onClick} />
-      </div>
+        <div className="x-icon">
+          <FontAwesomeIcon icon={faCircleXmark} onClick={onClick} />
+        </div>
         <p className="content">A self-taught Web Developer with two-year background in front-end Development. Having
           in-depth knowledge of common web technologies and languages such as JavaScript and
           its related libraries including but not limited to React and node.js. Committed to producing

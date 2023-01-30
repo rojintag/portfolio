@@ -12,6 +12,7 @@
   margin: 0;
   z-index: 5;
   font-family: $head_font;
+
   a {
     color: white;
     text-decoration: none;
@@ -31,16 +32,16 @@
     position: relative;
     margin-bottom: 1rem;
   }
-  }
+}
 
-  .icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
+.icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
 }
 
 .icon:hover {
@@ -54,9 +55,10 @@
 .white-content {
   .header {
     background-color: rgba(117, 116, 116, 0.264);
+
     a {
       color: rgb(43, 43, 43);
-  
+
     }
 
     a:hover {
@@ -70,6 +72,6 @@
     .icon:hover {
       color: #e6a637;
     }
-    
+
   }
 }

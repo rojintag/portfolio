@@ -16,22 +16,22 @@ function Works() {
   }
 
   const seeDetails = (id) => {
-      navigate('/projectDetails', {
-        state: {
-          id: `${id}`
+    navigate('/projectDetails', {
+      state: {
+        id: `${id}`
       }
-      });
+    });
   };
 
   return (
     <div className='projects'>
       <h2 className="title">My Projects</h2>
-        <div className="gallery">
-          {getProjects.data.map((project, index) => {
-            return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={() => seeDetails(project.id)} key={index} />
-          })
-                }
-        </div>
+      <div className="gallery">
+        {getProjects.data.map((project, index) => {
+          return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={() => seeDetails(project.id)} key={index} />
+        })
+        }
+      </div>
     </div>
   )
 }

@@ -4,8 +4,9 @@
   height: 100vh;
   padding-top: 5rem;
   color: #fff;
+
   input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   textarea:-webkit-autofill,
   textarea:-webkit-autofill:hover,
@@ -28,7 +29,7 @@
     margin-left: 5rem;
   }
 
-  
+
   form {
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@
   }
 
   .name-wrapper input {
-  width: 100%;
+    width: 100%;
   }
 
   textarea {
@@ -129,31 +130,32 @@
     background-color: #95f7ef;
     transform: scale(1.2);
   }
-  
 
- 
+
+
 
 }
+
 .white-content {
   .contact {
-    background: rgb(200,200,198);
-    background: linear-gradient(90deg, rgba(200,200,198,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(200, 200, 198);
+    background: linear-gradient(90deg, rgba(200, 200, 198, 1) 0%, rgba(255, 255, 255, 1) 100%);
     color: black;
-  
+
     .ad-text>.underline {
       background-color: #e6a637;
     }
-  
+
     .ad-text>span,
     .ad-text>label {
       color: rgba(13, 13, 13, 0.757);
     }
-  
+
     .ad-text>input,
     .ad-text>textarea {
       color: rgba(12, 12, 12, 0.95);
     }
-  
+
     .ad-text> :is(input:focus, input.has-value)~label,
     .ad-text> :is(textarea:focus, textarea.has-value)~label {
       color: #e6a637;
@@ -169,6 +171,6 @@
       transform: scale(1.2);
     }
 
-    
+
   }
 }
