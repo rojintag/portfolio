@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext, themes } from '../context/themeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 
 function Header() {
@@ -11,13 +13,21 @@ function Header() {
         <div>
         <ThemeContext.Consumer>
             {({ changeTheme }) => (
-              <label class="switch" onChange={() => {
+              <div class="switch" onClick={() => {
                 setDarkMode(!darkMode);
                 changeTheme(darkMode ? themes.light : themes.dark);
               }}>
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
+              <span
+            className={darkMode ? 'hidden' : 'icon'}
+          >
+            <FontAwesomeIcon icon={faMoon} />
+          </span>
+          <span
+            className={darkMode ? 'icon' : 'hidden'}
+          >
+            <FontAwesomeIcon icon={faSun} />
+          </span>
+            </div>
             )}
           </ThemeContext.Consumer>
          
