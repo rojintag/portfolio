@@ -73,7 +73,7 @@ function Contact() {
           <label htmlFor='message'>Message</label>
           <div className='underline' />
         </div>
-        <input type="submit" value="Submit" className='submit' onClick={onSubmit} />
+        <input type="submit" value="Submit" className='submit btn btn-border-4' onClick={onSubmit} />
       </form>
     </div>
   )

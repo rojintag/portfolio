@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { requestProjects } from '../api/projects';
 import ProjectCard from './ProjectCard';
-import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 function Works() {
+  const navigate = useNavigate();
   const getProjects = useQuery(["projects"], () => requestProjects(),
     {
       onError: (error) => {
@@ -14,38 +15,23 @@ function Works() {
     return <img className={"loading"} src={require('../components/assets/images/rings.svg')} />
   }
 
-  const seeDetails = () => {
-    alert("button clicked")
-  }
-
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 300,
-  //   lazyLoad: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 700,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       }
-  //     }
-  //       ]
-  // };
+  const seeDetails = (id) => {
+      navigate('/projectDetails', {
+        state: {
+          id: `${id}`
+      }
+      });
+  };
 
   return (
     <div className='projects'>
       <h2 className="title">My Projects</h2>
-      {/* <Slider {...settings}> */}
         <div className="gallery">
           {getProjects.data.map((project, index) => {
-            return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={seeDetails} key={index} />
+            return <ProjectCard title={project.title} date={project.date} image={project.image} seeDetails={() => seeDetails(project.id)} key={index} />
           })
                 }
         </div>
-      {/* </Slider> */}
     </div>
   )
 }

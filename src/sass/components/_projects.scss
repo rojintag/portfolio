@@ -72,6 +72,14 @@
           border-radius: 20px;
           padding: 0.3rem;
           border: none;
+          transition: ease-out 0.5s;
+          -webkit-transition: ease-out 0.5s;
+          -moz-transition: ease-out 0.5s;
+        }
+
+        button:hover {
+          background-color: #95f7ef;
+          transform: scale(1.2);
         }
       }
 
@@ -80,4 +88,37 @@
 
   }
 
+}
+
+.white-content {
+  .projects {
+    background: rgb(200,200,198);
+    background: linear-gradient(90deg, rgba(200,200,198,1) 0%, rgba(255,255,255,1) 100%);
+  
+    .title {
+      color: black;
+    }
+  
+    .project-card {
+      background-color: rgb(183, 183, 183);
+      opacity: .85;
+      
+  
+      &:hover {
+  
+        .text-wrapper {
+          color: black;
+          button{
+            background-color: #e6a637;
+          }
+
+          button:hover {
+            background-color: #f4c36f;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  
+  }
 }

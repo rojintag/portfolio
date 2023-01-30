@@ -75,8 +75,8 @@
     padding-left: 34px;
     border: 0;
     border-bottom: 2px solid #2e2a33;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.95);
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.95) !important;
   }
 
   input:focus,
@@ -112,10 +112,63 @@
     width: 100%;
   }
 
-  input[type=submit] {
+  .submit {
     background-color: #36EEE0;
     width: 100px;
     border-radius: 20px;
+    border: none;
     padding: 0.3rem;
+    position: relative;
+    display: inline-block;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+  }
+
+  .submit:hover {
+    background-color: #95f7ef;
+    transform: scale(1.2);
+  }
+  
+
+ 
+
+}
+.white-content {
+  .contact {
+    background: rgb(200,200,198);
+    background: linear-gradient(90deg, rgba(200,200,198,1) 0%, rgba(255,255,255,1) 100%);
+    color: black;
+  
+    .ad-text>.underline {
+      background-color: #e6a637;
+    }
+  
+    .ad-text>span,
+    .ad-text>label {
+      color: rgba(13, 13, 13, 0.757);
+    }
+  
+    .ad-text>input,
+    .ad-text>textarea {
+      color: rgba(12, 12, 12, 0.95);
+    }
+  
+    .ad-text> :is(input:focus, input.has-value)~label,
+    .ad-text> :is(textarea:focus, textarea.has-value)~label {
+      color: #e6a637;
+    }
+
+    input[type=submit] {
+      background-color: #e6a637;
+      border-color: #e6a637;
+    }
+
+    .submit:hover {
+      background-color: #f4c36f;
+      transform: scale(1.2);
+    }
+
+    
   }
 }

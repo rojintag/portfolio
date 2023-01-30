@@ -5,6 +5,6 @@ export const requestProjects = async () => {
   return res.data;
 }
 
-// export const requestProject = (id) => project.get(`/projects/${id}`).then((res) => {
-//   return res.data;
-// });
+export const requestProjectByID = (id) => project.get(`/projects/${id}`).then((res) => {
+  return res.data;
+});
