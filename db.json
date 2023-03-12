@@ -4,29 +4,30 @@
       "id": 1,
       "title": "My Green",
       "date": "July2022",
-      "description": "In this project we used sass, javascript and firebase",
-      "image": "https://picsum.photos/id/1/200/300"
+      "descripton": "In this project for authentication we used firebase and firestore as database. Also we used vanilla javascript and Sass for styling. In this project we used Agile method and thrello ot track the progress and tasks.",
+      "features": "The first feature is schedule to water plants or when is good tochange the soil based on the data on database. The second feature is scan the plant and with an api you will find the name of plant. The third feature is you can post the picture of your plant and share it in the application and comment under other posts.",
+      "image": "https://picsum.photos/id/1/200/300",
+      "images":[
+        "",
+        ""
+      ],
+      "link" : ""
     },
     {
       "id": 2,
       "title": "Tie in",
       "date": "December 2022",
-      "description": "In this project we used sass, javascript and firebase",
+      "description": "we used Jira to plan, assign, report, and manage tasks with the members. Jira’s total transparency and custom reporting options are more sophisticated  than other platforms. Our development team used GitHub to host codes and keep track of the platform bugs.\nWe chose the ReactJS framework as it simplifies front-end development thanks to its flexibility and component reusability. We also used the ReactQuery library for data fetching, caching, and updating the server state in the React application.For styling, SASS (Syntactically Awesome Stylesheets) is a popular CSS pre-processor that makes styling much fast, structured, and easy to maintain.Additionally, we used Auth service from Firebase for user authentication management. \nWe picked Node.js as our framework for back-end service. We also decided to use Express Js to easily create REST APIs and endpoint exposure. \nMongoDB is the NoSQL database that is used, as it allows flexible data schema and high performance. In addition, we used Firebase Storage for our file-saving necessities.\nNetlify and Render are the choices for front and back-end deployment. Both tools allow creating an easy CI/CD pipeline by selecting the branch we need in GitHub. Postman serves as the testing tool for REST APIs. \ntiein.ca",
+      "features": "Students can share their school projects, and businesses can share their ideas to work collaboratively.\nBoth students and businesses can explore our project library for their desired projects and ideas. \nStudents can directly apply to business projects simply by filling out a form.",
       "image": "https://picsum.photos/id/125/200/300"
     },
     {
       "id": 3,
       "title": "EZpill",
       "date": "January2023",
-      "description": "In this project we used sass, javascript and firebase",
+      "description": "In this project for front-end saas and javascript has been used. Also for back-end pythen is used. \nhttps://www.ezypill.com/",
+      "features": "https://www.ezypill.com/",
       "image": "https://picsum.photos/id/43/200/300"
-    },
-    {
-      "id": 4,
-      "title": "EZpill",
-      "date": "January2023",
-      "description": "In this project we used sass, javascript and firebase",
-      "image": "https://picsum.photos/id/10/200/300"
     }
   ]
 }
