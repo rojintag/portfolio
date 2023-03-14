@@ -43,9 +43,9 @@ function Header() {
           <div className={hamburgerMenu ? 'rotate2' : 'menu-line2'}></div>
         </div>
         <div className={hamburgerMenu ? 'navbar-show' : 'navbar-hide'}>
-          <Link to="/">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/" onClick={changeMenu}>About</Link>
+          <Link to="/projects" onClick={changeMenu}>Projects</Link>
+          <Link to="/contact" onClick={changeMenu}>Contact</Link>
         </div>
       </nav>
     </>
