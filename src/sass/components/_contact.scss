@@ -169,7 +169,7 @@
 
     .ad-text>input,
     .ad-text>textarea {
-      color: rgba(12, 12, 12, 0.95);
+      color: rgba(12, 12, 12, 1) !important;
     }
 
     .ad-text> :is(input:focus, input.has-value)~label,
