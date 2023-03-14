@@ -13,11 +13,25 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project-wrapper img {
+    margin: 1rem;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+
   .icon-back {
     font-size: 2rem;
     display: block;
     margin-bottom: 3rem;
     color: white;
+  }
+
+  .details {
+    max-width: 70%;
+    margin-bottom: 12rem;
   }
 
   h2 {
@@ -40,5 +54,19 @@
 
   .icon-back {
     color: black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-details {
+    .project-wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .images {
+      flex-direction: row;
+    }
   }
 }

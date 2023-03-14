@@ -1,11 +1,11 @@
 .name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
   align-items: center;
   overflow: disabled;
   color: white;
-
+  gap: 4rem;
   background-size: cover;
   // background: rgb(36,34,38);
   // background: linear-gradient(137deg, rgba(36,34,38,1) 11%, rgba(46,58,89,1) 62%);
@@ -16,6 +16,11 @@
   bottom: 0;
   min-height: 100%;
   width: 100%;
+
+  .title {
+    margin-left: 10rem;
+    grid-column: 1/2;
+  }
 
   .about-hide {
     display: none;
@@ -44,9 +49,15 @@
     display: none;
   }
 
+  .about {
+    display: block;
+  }
+
   .card-show {
-    max-width: 900px;
+    min-width: 30%;
     border: 1px solid white;
+    justify-self: center;
+    margin: auto;
     padding: 1.5rem;
     font-size: 1.2rem;
     animation: slidein 1s ease-in;
@@ -54,7 +65,7 @@
 
   @keyframes slidein {
     from {
-      transform: translateY(50%);
+      transform: translateY(10%);
     }
   }
 
@@ -63,20 +74,6 @@
     justify-content: end;
     font-size: 1.5rem;
     cursor: pointer;
-  }
-
-  .type-writer {
-    width: 18ch;
-    animation: typing 2s steps(22);
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
   }
 
 
@@ -326,5 +323,27 @@
       box-shadow: #6f6f6f 0px 0px 20px 2px;
     }
 
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image-container {
+      display: none;
+    }
+
+    .title {
+      margin: 0;
+    }
+
+    .card-show {
+      margin: 1rem;
+      margin-bottom: 40%;
+    }
   }
 }

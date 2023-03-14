@@ -174,3 +174,19 @@
 
   }
 }
+
+@media screen and (max-width: 800px) {
+  .contact {
+    .name-wrapper {
+      flex-direction: column;
+    }
+
+    form {
+      padding: 1rem;
+    }
+
+    .ad-text {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
