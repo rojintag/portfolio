@@ -12,6 +12,9 @@ function Header() {
   const changeMenu = () => {
     setHamburgerMenu(!hamburgerMenu)
   }
+  const closeMenu = () => {
+    setHamburgerMenu(false)
+  }
 
   return (
     <>
@@ -43,9 +46,9 @@ function Header() {
           <div className={hamburgerMenu ? 'rotate2' : 'menu-line2'}></div>
         </div>
         <div className={hamburgerMenu ? 'navbar-show' : 'navbar-hide'}>
-          <Link to="/" onClick={changeMenu}>About</Link>
-          <Link to="/projects" onClick={changeMenu}>Projects</Link>
-          <Link to="/contact" onClick={changeMenu}>Contact</Link>
+          <Link to="/" onClick={closeMenu}>About</Link>
+          <Link to="/projects" onClick={closeMenu}>Projects</Link>
+          <Link to="/contact" onClick={closeMenu}>Contact</Link>
         </div>
       </nav>
     </>
