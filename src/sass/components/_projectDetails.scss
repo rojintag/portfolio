@@ -70,3 +70,13 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .project-details {
+    height: 200vh;
+
+    img {
+      display: none;
+    }
+  }
+}

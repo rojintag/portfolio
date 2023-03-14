@@ -10,8 +10,8 @@
 
   .title {
     color: white;
-    font-size: 3rem;
-    margin-right: 40%;
+    font-size: 2rem;
+    margin-right: 50%;
     margin-bottom: 3rem;
   }
 
@@ -135,6 +135,30 @@
 
     .project-card {
       margin: 0.5rem;
+
+      .text-wrapper {
+        margin: auto;
+        grid-column: 1/-1;
+      }
+
+      img {
+        display: none;
+      }
+
+      &:hover {
+        .text-wrapper {
+          margin: auto;
+          grid-column: 1/-1;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 500px) {
+
+  .projects .title {
+    margin-top: 3rem;
+  }
+
 }
