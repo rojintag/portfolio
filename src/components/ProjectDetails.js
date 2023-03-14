@@ -36,6 +36,7 @@ function ProjectDetails() {
           <p>{project.date}</p>
           <p>{project.description}</p>
           <p>{project.features}</p>
+          <a href={project.link}>{project.link}</a>
         </div>
         <div className="images">
           <img src={project.images[0]} alt="project's image" />
