@@ -67,6 +67,7 @@
 
 @media screen and (max-width: 800px) {
   .project-details {
+    min-height: 100vh;
     height: 200%;
     .project-wrapper {
       flex-direction: column-reverse;

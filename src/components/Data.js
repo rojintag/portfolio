@@ -10,7 +10,8 @@ export const projectData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/mygreen%201.JPG?alt=media&token=f532e85d-7201-43a9-8a8a-6f28408ca2ab",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/mygreen2.JPG?alt=media&token=919a5e04-f155-4b28-96d7-86283e672fe6"
     ],
-    "link": ""
+    "link": "",
+    "githubLink": "https://github.com/rojintag/My-Green"
   },
   {
     "id": 2,
@@ -22,7 +23,8 @@ export const projectData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/tirein1.JPG?alt=media&token=cd0f40e1-28de-4956-ac01-e08ec2ad1583",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/tiein2.JPG?alt=media&token=503d24fa-1ffb-403c-9d17-1387282eec51"
     ],
-    "link": "https://tiein.ca"
+    "link": "https://tiein.ca",
+    "githubLink": ""
   },
   {
     "id": 3,
@@ -34,6 +36,7 @@ export const projectData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/ezypill1.png?alt=media&token=26c90115-0d3a-4970-b8af-67c181b3e4d8",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-47430.appspot.com/o/ezypill2.png?alt=media&token=7b57ef67-5c76-48b4-982e-55fa4d2c1ebf"
     ],
-    "link": "https://Ezypill.com"
+    "link": "https://Ezypill.com",
+    "githublink": ""
   }
 ]
