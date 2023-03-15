@@ -199,6 +199,10 @@
 @media screen and (max-width: 800px) {
   .contact {
 
+    h2 {
+      margin: 1rem auto;
+    }
+
     padding-top: 3rem;
     .name-wrapper {
       flex-direction: column;

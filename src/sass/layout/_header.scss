@@ -99,7 +99,7 @@
       justify-content: center;
       align-items: center;
       transition: .5s;
-      z-index: 10;
+      z-index: 50;
     }
 
     .menu-line1 {
@@ -144,7 +144,7 @@
 
     .navbar-show{
       position: fixed ;
-      top:43% ;
+      top:42% ;
       left: 0;
       background: rgba(31, 31, 31, 0.97);
       width: 100%;
