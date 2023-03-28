@@ -23,7 +23,7 @@ function Name() {
           <div className="x-icon">
             <FontAwesomeIcon icon={faCircleXmark} onClick={onClick} />
           </div>
-          <p className="content">A frontend web and mobile application developert. Having in-depth knowledge of common web technologies and languages such as JavaScript(ES6) and its related libraries including React and Node.js. Committed to producing high-quality, user-friendly web applications. Recognized for successfully handling several application projects using scrum framework.</p>
+          <p className="content">A frontend web and mobile application developer. Having in-depth knowledge of common web technologies and languages such as JavaScript(ES6) and its related libraries including React and Node.js. Committed to producing high-quality, user-friendly web applications. Recognized for successfully handling several application projects using scrum framework.</p>
         </div>
       </div>
       <div className="image-container">
