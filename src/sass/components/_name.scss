@@ -363,6 +363,8 @@
       top: 6rem;
       left: 20px;
       z-index: 10;
+      max-height: 400px;
+      overflow-y: scroll;
     }
   }
 }
