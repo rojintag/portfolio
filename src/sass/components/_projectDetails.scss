@@ -11,15 +11,41 @@
     display: flex;
     justify-content: space-between;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
   }
 
+  .image-wrapper {
+    overflow: hidden;
+    max-width: 300px;
+    max-height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: rgba(104, 103, 103, 0.1);
+    border-radius: 12px;
+  }
+  
   .project-wrapper img {
+    transition: transform 0.3s;
     margin: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    }
+
+  .images:hover img{
+    transform: scale(1.7) translateY(20%) translateX(10%);
+    object-fit: contain;
+  }
+
+  .images:hover .image-wrapper {
+    width: 600px;
+    height: 900px;
   }
 
   .images {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
 
   .icon-back {
@@ -31,7 +57,7 @@
 
   .details {
     max-width: 70%;
-    margin-bottom: 12rem;
+    // margin-bottom: 20rem;
   }
 
   h2 {
@@ -77,6 +103,7 @@
 
     .images {
       flex-direction: row;
+      margin-bottom: .5rem;
     }
   }
 }

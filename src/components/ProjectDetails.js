@@ -39,8 +39,12 @@ function ProjectDetails() {
           <a href={project.link}>{project.link}</a>
         </div>
         <div className="images">
-          <img src={project.images[0]} alt="project's image" />
-          <img src={project.images[1]} alt="project's image" />
+          <div className="image-wrapper">
+            <img src={project.images[0]} alt="project's image" />
+          </div>
+          <div className="image-wrapper">
+            <img src={project.images[1]} alt="project's image" />
+          </div>
         </div>
       </div>
     </div>
