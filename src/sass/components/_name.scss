@@ -352,3 +352,17 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .name {
+    min-height: 100vh;
+    min-width: 100vw;
+    .card-show {
+      padding: .4rem;
+      position: absolute;
+      top: 6rem;
+      left: 20px;
+      z-index: 10;
+    }
+  }
+}

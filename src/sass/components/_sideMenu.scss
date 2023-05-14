@@ -57,3 +57,9 @@ li a:hover {
     color: #e6a637;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .side-menu {
+    display: none;
+  }  
+}
