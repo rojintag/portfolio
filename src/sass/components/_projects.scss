@@ -170,22 +170,12 @@
     .project-card {
       margin: 0.5rem;
 
+
       .text-wrapper {
         margin: auto;
         grid-column: 1/-1;
         opacity: 1;
       }
-
-      // .text-wrapper button {
-      //   background-color: #36EEE0;
-      //   width: 100px;
-      //   border-radius: 20px;
-      //   padding: 0.3rem;
-      //   border: none;
-      //   transition: ease-out 0.5s;
-      //   -webkit-transition: ease-out 0.5s;
-      //   -moz-transition: ease-out 0.5s;
-      // }
 
       .image-wrapper {
         display: none;
@@ -209,6 +199,27 @@
 
   .projects .title {
     margin-top: 3rem;
+  }
+
+  .project-card {
+    .text-wrapper p ,
+    .text-wrapper button {
+      opacity: 0;
+    }
+
+    .text-wrapper h2 {
+      margin: auto;
+      text-align: center;
+    }
+
+    &:hover {
+      
+      
+      .text-wrapper p ,
+      .text-wrapper button {
+        opacity: 1;
+      }
+    }
   }
 
 }
